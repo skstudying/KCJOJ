@@ -15,11 +15,11 @@ const rootState = {
     visible: false
   },
   websiteConfig:{
-    recordName:'© 2020-2022',
-    projectName:'HOJ',
-    shortName:'OJ',
-    recordUrl:'#',
-    projectUrl:'#',
+    recordName:'© 2023-2023',
+    projectName:'KCJOJ',
+    shortName:'KCJOJ',
+    recordUrl:'skstudying.com',
+    projectUrl:'skstudying.com',
     openPublicDiscussion: true,
     openGroupDiscussion: true,
     openContestComment: true

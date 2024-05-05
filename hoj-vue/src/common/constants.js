@@ -140,24 +140,59 @@ export const JUDGE_STATUS_RESERVE={
 export const PROBLEM_LEVEL={
   '0':{
     name:{
-      'zh-CN':'简单',
+      'zh-CN':'未评定',
+      'en-US':'NotJudged',
+    },
+    color:'#F0F0F0'
+  },
+  '1':{
+    name:{
+      'zh-CN':'⭐',
       'en-US':'Easy',
     },
     color:'#19be6b'
   },
-  '1':{
-    name:{
-      'zh-CN':'中等',
-      'en-US':'Mid',
-    },
-    color:'#2d8cf0'
-  },
   '2':{
     name:{
-      'zh-CN':'困难',
+      'zh-CN':'⭐⭐',
+      'en-US':'Normal',
+    },
+    color:'#ffff00'
+  },
+  '3':{
+    name:{
+      'zh-CN':'⭐⭐⭐',
+      'en-US':'Mid',
+    },
+    color:'#ff9900'
+  },
+  '4':{
+    name:{
+      'zh-CN':'⭐⭐⭐⭐',
       'en-US':'Hard',
     },
+    color:'#ffb6c1'
+  },
+  '5':{
+    name:{
+      'zh-CN':'⭐⭐⭐⭐⭐',
+      'en-US':'PrettyHardHard',
+    },
     color:'#ed3f14'
+  },
+  '6':{
+    name:{
+      'zh-CN':'⭐⭐⭐⭐⭐⭐',
+      'en-US':'Difficult',
+    },
+    color:'#000099'
+  },
+  '7':{
+    name:{
+      'zh-CN':'⭐⭐⭐⭐⭐⭐⭐',
+      'en-US':'VeryDifficult',
+    },
+    color:'#000000'
   }
 }
 
@@ -186,9 +221,6 @@ export const REMOTE_OJ = [
   {
     name:"SPOJ",
     key:"SPOJ"
-  },{
-    name:"LIBREOJ",
-    key: "LIBRE"
   }
 ]
 
