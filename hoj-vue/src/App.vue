@@ -31,54 +31,29 @@
               :md="6"
               :xs="24"
             >
-              <h1>{{ $t('m.Service') }}</h1>
-              <p>
-                <a @click="goRoute('/status')">{{ $t('m.Judging_Queue') }}</a>
-              </p>
-              <p>
-                <a @click="goRoute('/developer')">{{ $t('m.System_Info') }}</a>
-              </p>
+              <h1>{{ $t('m.ContactUs') }}</h1>
+                <p>
+                  <i class="fa fa-wechat" aria-hidden="true"></i> 微信号: kechuangjia01
+                </p>
+                <p>
+                  <i class="fa fa-wechat" aria-hidden="true"></i> 公众号: 科创家信奥编程
+                </p>
             </el-col>
             <el-col class="hr-none">
               <el-divider></el-divider>
             </el-col>
-            <el-col
-              :md="6"
-              :xs="24"
-            >
-              <h1>{{ $t('m.Development') }}</h1>
-              <p class="mb-1">
-                <a
-                  href="skstudying.com"
-                  target="_blank"
-                >{{
-                  $t('m.Open_Source')
-                }}</a>
-              </p>
-              <p class="mb-1"><a @click="goRoute('/#')">API</a></p>
-            </el-col>
+        <el-col :md="6" :xs="24">
+          <h1>{{ $t('m.WeChatQR') }}</h1> 
+          <img src="https://img2.imgtp.com/2024/05/06/UoC3c16V.png" alt="WeChat QR Code" style="width: 100px; height: 100px;">
+        </el-col>
             <el-col class="hr-none">
               <el-divider></el-divider>
             </el-col>
-            <el-col
-              :md="6"
-              :xs="24"
-            >
-              <h1>{{ $t('m.Support') }}</h1>
-              <p>
-                <i
-                  class="fa fa-info-circle"
-                  aria-hidden="true"
-                ></i><a @click="goRoute('/introduction')"> {{ $t('m.NavBar_About') }}</a>
-              </p>
-              <p>
-                <i class="el-icon-document"></i>
-                <a
-                  href="skstudying.com"
-                  target="_blank"
-                > {{ $t('m.Help') }}</a>
-              </p>
-            </el-col>
+        <el-col :md="6" :xs="24">
+          <h1>{{ $t('m.DouyinQR') }}</h1>
+          <!-- img src="https://img2.imgtp.com/2024/05/06/Dd2R9liK.png" alt="Douyin QR Code" style="width: 100px; height: 100px;" -->
+          <img src="https://img2.imgtp.com/2024/05/13/L7RML1Y5.jpg" alt="Douyin QR Code" style="width: 100px; height: 100px;" >
+        </el-col>
           </el-row>
         </div>
         <div class="mundb-footer">

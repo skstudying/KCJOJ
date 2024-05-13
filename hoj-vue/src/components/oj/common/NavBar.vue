@@ -65,17 +65,18 @@
               ></i
               >{{ $t('m.NavBar_Group') }}</el-menu-item
             >
-            <el-submenu index="about">
-              <template slot="title"
-                ><i class="el-icon-info"></i>{{ $t('m.NavBar_About') }}</template
-              >
-              <el-menu-item index="/introduction">{{
-                $t('m.NavBar_Introduction')
-              }}</el-menu-item>
-              <el-menu-item index="/developer">{{
-                $t('m.NavBar_Developer')
-              }}</el-menu-item>
-            </el-submenu>
+        <el-submenu index="toolbox">
+          <template slot="title"><i class="el-icon-s-cooperation"></i>{{ $t('m.NavBar_Tool') }}</template>
+          <el-menu-item @click.native="handleExternalLink('https://daziya.com/courses')">{{ $t('m.Tool_Link1') }}</el-menu-item>
+          <el-menu-item @click.native="handleExternalLink('https://typing.scmaao.com')">{{ $t('m.Tool_Link2') }}</el-menu-item>
+          <el-menu-item @click.native="handleExternalLink('https://visualgo.net/zh')">{{ $t('m.Tool_Link3') }}</el-menu-item>
+          <el-menu-item @click.native="handleExternalLink('https://csacademy.com/app/graph_editor')">{{ $t('m.Tool_Link4') }}</el-menu-item>
+          <el-menu-item @click.native="handleExternalLink('https://www.online-ide.com/online_c++_ide')">{{ $t('m.Tool_Link5') }}</el-menu-item>
+          <el-menu-item @click.native="handleExternalLink('https://markmap.js.org/repl')">{{ $t('m.Tool_Link6') }}</el-menu-item>
+          <el-menu-item @click.native="handleExternalLink('https://www.51goc.com/static/gocWebNet/gocWebNet.html')">{{ $t('m.Tool_Link7') }}</el-menu-item>    
+          <el-menu-item @click.native="handleExternalLink('http://blogweb.fun')">{{ $t('m.Tool_Link8') }}</el-menu-item>   
+          <el-menu-item @click.native="handleExternalLink('https://ks.wjx.top/vm/rhvaxur.aspx ')">{{ $t('m.Tool_Link9') }}</el-menu-item>   
+        </el-submenu>
         </template>
         <template v-else-if="mode == 'training'">
           <el-menu-item index="/home"
@@ -671,6 +672,10 @@ export default {
   },
   methods: {
     ...mapActions(['changeModalStatus']),
+    handleExternalLink(url) {
+      // 使用 '_blank' 作为第二个参数来在新标签页中打开 URL
+      window.open(url, '_blank');
+    },
     page_width() {
       let screenWidth = window.screen.width;
       if (screenWidth < 992) {
